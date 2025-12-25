@@ -9,6 +9,9 @@ def home(request):
     print(courses_count)
     context = {
         'courses': courses,
-        'courses_count' :courses_count,
+        'courses_count' :courses_count
     }
     return render(request,'home.html',context)
+
+def courses(request):
+    return render(request,'courses.html')

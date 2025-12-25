@@ -9,11 +9,34 @@
 </head>
 <body>
 
-<div class="container mt-3">
-    <h1 style="color: green;text-align: center;">Welcome to Diamond Academy !!!</h1>
-  <ul class="list-group d-flex justify-content-center">
-    <li class="list-group-item box">Course List ({{ courses_count}}) </li>
-    <li class="list-group-item box">Trainer</li>
-    <li class="list-group-item box">Students</li>
-  </ul>
+<div class="container mt-10">
+  <h1 style="color: green;text-align: center;">Welcome to Diamond Academy</h1>
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-header">Total Courses</div>
+            <div class="card-body">
+                <h1 class="card-text">{{ courses_count }}</h1>
+                <p class="card-title"><a href='courses'>View All Courses</a></p>
+            </div>
+        </div>
+    
+    
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-header">Total trainers</div>
+            <div class="card-body">
+                <h1 class="card-text">5</h1>
+                <p class="card-title"><a href='courses'>View All Trainers</a></p>
+            </div>
+        </div>
+    
+    
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-header">Total Students</div>
+            <div class="card-body">
+                <h1 class="card-text">5</h1>
+                <p class="card-title"><a href='courses'>View All Students</a></p>
+            </div>
+        </div>
+    
 </div>
+
+
