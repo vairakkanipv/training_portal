@@ -7,4 +7,7 @@ class Course(models.Model):
     duration = models.IntegerField()
     course_image = models.ImageField(upload_to='images/')
 
+    def __str__(self):
+        return self.course_name
+
 
