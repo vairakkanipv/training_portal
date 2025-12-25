@@ -30,4 +30,7 @@ class Student(models.Model):
     entrolled_course = models.ForeignKey(Course,on_delete=models.SET_NULL,blank=True,null=True)
     trainer = models.ForeignKey(Trainer,on_delete=models.SET_NULL,blank=True,null=True)
 
+    def __str__(self):
+        return self.first_name + " " + self.last_name
+
 
