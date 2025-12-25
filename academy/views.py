@@ -3,5 +3,5 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse("<h1>Welcome to our Academy</h1>")
+    return HttpResponse("<h1><style="color:green">Welcome to our Academy</style></h1>")
 
