@@ -38,34 +38,55 @@
 </nav>
 
 
-<div class="container mt-10">
-  <h1 style="color: green;text-align: center;">Welcome to Diamond Academy</h1>
-        <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Total Courses</div>
-            <div class="card-body">
-                <h1 class="card-text text-center text-success" style="font-size: 70px;">{{ courses_count }}</h1>
-                <p class="card-title"><a href='courses'>View All Courses</a></p>
-            </div>
+<div class="container mt-4">
+  <h1 style="color: green; text-align: center;">Welcome to Diamond Academy</h1>
+
+  <div class="row mt-4 justify-content-center">
+
+    <div class="col-md-4 col-lg-3">
+      <div class="card bg-light mb-3">
+        <div class="card-header">Total Courses</div>
+        <div class="card-body">
+          <h1 class="text-center text-success" style="font-size: 70px;">
+            {{ courses_count }}
+          </h1>
+          <p class="text-center">
+            <a href="/courses/">View All Courses</a>
+          </p>
         </div>
-    
-    
-        <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Total trainers</div>
-            <div class="card-body">
-                <h1 class="card-text text-danger text-center" style="font-size: 70px;">{{ trainers_count }}</h1>
-                <p class="card-title"><a href='trainers'>View All Trainers</a></p>
-            </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-3">
+      <div class="card bg-light mb-3">
+        <div class="card-header">Total Trainers</div>
+        <div class="card-body">
+          <h1 class="text-center text-danger" style="font-size: 70px;">
+            {{ trainers_count }}
+          </h1>
+          <p class="text-center">
+            <a href="/trainers/">View All Trainers</a>
+          </p>
         </div>
-    
-    
-        <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Total Students</div>
-            <div class="card-body">
-                <h1 class="card-text text-dark text-center" style="font-size: 70px;">{{ students_count }}</h1>
-                <p class="card-title"><a href='students'>View All Students</a></p>
-            </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-3">
+      <div class="card bg-light mb-3">
+        <div class="card-header">Total Students</div>
+        <div class="card-body">
+          <h1 class="text-center text-dark" style="font-size: 70px;">
+            {{ students_count }}
+          </h1>
+          <p class="text-center">
+            <a href="/students/">View All Students</a>
+          </p>
         </div>
-    
+      </div>
+    </div>
+
+  </div>
 </div>
+
 
 
